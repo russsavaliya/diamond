@@ -11,10 +11,10 @@ export default function Button({
   className = '',
 }) {
   const base =
-    'relative overflow-hidden inline-flex items-center justify-center px-8 py-3 font-body font-medium tracking-wide rounded-full transition-colors duration-300 shine-overlay';
+    'relative overflow-hidden inline-flex items-center justify-center px-8 py-3 font-body font-semibold text-sm tracking-[0.12em] uppercase rounded-full transition-colors duration-300 shine-overlay';
 
   const variants = {
-    primary: 'bg-diamond-gold text-diamond-black hover:bg-[#e6c659]',
+    primary: 'bg-diamond-gold text-diamond-black hover:bg-[#33ddff]',
     secondary: 'bg-transparent border border-diamond-gold text-diamond-gold hover:bg-diamond-gold/10',
   };
 
@@ -23,8 +23,14 @@ export default function Button({
   const content = <span className="relative z-10">{children}</span>;
 
   const motionProps = {
-    whileHover: { scale: 1.05, boxShadow: '0 0 20px rgba(212,175,55,0.5)' },
+    whileHover: {
+      scale: 1.05,
+      boxShadow: variant === 'primary'
+        ? '0 0 30px rgba(0,212,255,0.55), 0 0 60px rgba(0,212,255,0.2)'
+        : '0 0 20px rgba(0,212,255,0.35)',
+    },
     whileTap: { scale: 0.97 },
+    transition: { type: 'spring', stiffness: 300, damping: 20 },
   };
 
   if (to) {

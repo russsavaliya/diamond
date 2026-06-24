@@ -1,14 +1,15 @@
 import {
-  FaGem,
-  FaCertificate,
-  FaLeaf,
-  FaGlobeAmericas,
-  FaSeedling,
-  FaFlask,
-  FaIndustry,
-  FaCut,
-  FaAward,
-} from 'react-icons/fa';
+  GiCutDiamond,
+  GiDiamondHard,
+  GiStarMedal,
+  GiLeafSwirl,
+  GiWorld,
+  GiCrystalGrowth,
+  GiChemicalDrop,
+  GiFactory,
+  GiMedal,
+  GiAtom,
+} from 'react-icons/gi';
 
 export const company = {
   name: 'Shree Hari Diamtech',
@@ -29,22 +30,22 @@ export const company = {
 
 export const whyChooseUs = [
   {
-    icon: FaGem,
+    icon: GiDiamondHard,
     title: 'Uncompromising Quality',
     desc: 'Every diamond is grown and graded under strict quality control to ensure exceptional fire and clarity.',
   },
   {
-    icon: FaCertificate,
+    icon: GiStarMedal,
     title: 'Certified CVD Process',
     desc: 'Our diamonds are cultivated using state-of-the-art Chemical Vapor Deposition technology and independently certified.',
   },
   {
-    icon: FaLeaf,
+    icon: GiLeafSwirl,
     title: 'Ethical Sourcing',
     desc: 'Conflict-free, sustainably grown diamonds with a fraction of the environmental footprint of mining.',
   },
   {
-    icon: FaGlobeAmericas,
+    icon: GiWorld,
     title: 'Global Export',
     desc: 'Trusted by jewelers and distributors across 20+ countries with seamless international logistics.',
   },
@@ -52,27 +53,27 @@ export const whyChooseUs = [
 
 export const processSteps = [
   {
-    icon: FaSeedling,
+    icon: GiCrystalGrowth,
     title: 'Rough Diamond Growth',
     desc: 'A thin diamond seed is placed in a high-tech growth chamber where carbon-rich gases are introduced.',
   },
   {
-    icon: FaFlask,
+    icon: GiChemicalDrop,
     title: 'Chemical Vapor Deposition',
     desc: 'Plasma energy breaks down the gases, depositing pure carbon atoms layer by layer onto the seed.',
   },
   {
-    icon: FaCut,
+    icon: GiCutDiamond,
     title: 'Cutting & Shaping',
     desc: 'Master craftsmen cut the rough diamond into precise, brilliant shapes using advanced laser precision.',
   },
   {
-    icon: FaIndustry,
+    icon: GiFactory,
     title: 'Polishing',
     desc: 'Each facet is meticulously polished to maximize light return, fire, and overall brilliance.',
   },
   {
-    icon: FaAward,
+    icon: GiMedal,
     title: 'Certification & Export',
     desc: 'Diamonds are graded by recognized gemological institutes before being packaged for global export.',
   },
@@ -136,12 +137,12 @@ export const testimonials = [
 ];
 
 export const coreValues = [
-  { icon: FaGem, title: 'Integrity', desc: 'Honest, transparent dealings with every partner and client.' },
-  { icon: FaLeaf, title: 'Sustainability', desc: 'Minimizing environmental impact through lab-grown innovation.' },
-  { icon: FaCertificate, title: 'Excellence', desc: 'Relentless pursuit of quality in every diamond we produce.' },
-  { icon: FaGlobeAmericas, title: 'Global Reach', desc: 'Serving clients and partners across continents.' },
-  { icon: FaFlask, title: 'Innovation', desc: 'Investing continually in advanced CVD growth technology.' },
-  { icon: FaAward, title: 'Trust', desc: 'Building long-term relationships through reliability.' },
+  { icon: GiDiamondHard, title: 'Integrity', desc: 'Honest, transparent dealings with every partner and client.' },
+  { icon: GiLeafSwirl, title: 'Sustainability', desc: 'Minimizing environmental impact through lab-grown innovation.' },
+  { icon: GiStarMedal, title: 'Excellence', desc: 'Relentless pursuit of quality in every diamond we produce.' },
+  { icon: GiWorld, title: 'Global Reach', desc: 'Serving clients and partners across continents.' },
+  { icon: GiAtom, title: 'Innovation', desc: 'Investing continually in advanced CVD growth technology.' },
+  { icon: GiMedal, title: 'Trust', desc: 'Building long-term relationships through reliability.' },
 ];
 
 export const team = [

@@ -4,20 +4,23 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        heading: ['Playfair Display', 'serif'],
-        body: ['Poppins', 'sans-serif'],
+        heading: ['Cinzel', 'serif'],
+        body: ['Raleway', 'sans-serif'],
         accent: ['Cormorant Garamond', 'serif'],
       },
       colors: {
         'diamond-black': '#0a0a0a',
         'diamond-blue': '#b9e4ff',
         'diamond-silver': '#e5e5e5',
-        'diamond-gold': '#d4af37',
+        'diamond-gold': '#00d4ff',
+        'diamond-violet': '#8b5cf6',
       },
       animation: {
-        shimmer: 'shimmer 2.5s linear infinite',
+        shimmer: 'shimmer 3s linear infinite',
         'spin-slow': 'spin 3s linear infinite',
         float: 'float 6s ease-in-out infinite',
+        'glow-pulse': 'glowPulse 2.5s ease-in-out infinite',
+        'spin-reverse': 'spinReverse 6s linear infinite',
       },
       keyframes: {
         shimmer: {
@@ -27,6 +30,14 @@ export default {
         float: {
           '0%, 100%': { transform: 'translateY(0)' },
           '50%': { transform: 'translateY(-12px)' },
+        },
+        glowPulse: {
+          '0%, 100%': { boxShadow: '0 0 20px rgba(0, 212, 255, 0.3)' },
+          '50%': { boxShadow: '0 0 50px rgba(0, 212, 255, 0.7)' },
+        },
+        spinReverse: {
+          '0%': { transform: 'rotate(360deg)' },
+          '100%': { transform: 'rotate(0deg)' },
         },
       },
     },

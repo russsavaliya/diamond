@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { motion, useInView } from 'framer-motion';
 
-export default function CountUp({ end, duration = 2 }) {
+export default function CountUp({ end, duration = 2.2 }) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.5 });
   const [value, setValue] = useState(0);
@@ -27,7 +27,10 @@ export default function CountUp({ end, duration = 2 }) {
   }, [isInView, end, duration]);
 
   return (
-    <motion.span ref={ref} className="font-heading text-4xl md:text-5xl text-diamond-gold">
+    <motion.span
+      ref={ref}
+      className="font-heading text-4xl md:text-5xl text-diamond-gold drop-shadow-[0_0_15px_rgba(0,212,255,0.5)]"
+    >
       {value.toLocaleString()}+
     </motion.span>
   );
