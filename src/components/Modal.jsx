@@ -22,7 +22,7 @@ export default function Modal({ isOpen, onClose, children }) {
           >
             <button
               onClick={onClose}
-              className="absolute top-4 right-4 text-diamond-silver hover:text-diamond-gold transition-colors"
+              className="absolute top-4 right-4 text-diamond-silver hover:text-black transition-colors"
               aria-label="Close"
             >
               <FaTimes size={22} />

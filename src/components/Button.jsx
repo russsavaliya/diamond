@@ -16,6 +16,7 @@ export default function Button({
   const variants = {
     primary: 'bg-diamond-gold text-diamond-black hover:bg-diamond-violet',
     secondary: 'bg-transparent border border-diamond-gold text-diamond-gold hover:bg-diamond-gold/10',
+    'secondary-light': 'bg-transparent border border-white text-white hover:bg-white/10',
   };
 
   const classes = `${base} ${variants[variant]} ${className}`;
@@ -26,8 +27,8 @@ export default function Button({
     whileHover: {
       scale: 1.05,
       boxShadow: variant === 'primary'
-        ? '0 0 30px rgba(201,169,110,0.55), 0 0 60px rgba(201,169,110,0.2)'
-        : '0 0 20px rgba(201,169,110,0.35)',
+        ? '0 4px 20px rgba(0,0,0,0.25), 0 8px 32px rgba(0,0,0,0.12)'
+        : '0 4px 16px rgba(0,0,0,0.15)',
     },
     whileTap: { scale: 0.97 },
     transition: { type: 'spring', stiffness: 300, damping: 20 },

@@ -28,7 +28,7 @@ export default function Diamonds() {
               className={`px-5 py-2 rounded-full font-body text-sm transition-colors ${
                 activeCategory === cat
                   ? 'bg-diamond-gold text-diamond-black'
-                  : 'glass text-diamond-silver hover:text-diamond-gold'
+                  : 'glass text-diamond-silver hover:text-black'
               }`}
             >
               {cat}
@@ -49,8 +49,8 @@ export default function Diamonds() {
                   alt={product.name}
                   className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-diamond-black/0 group-hover:bg-diamond-black/60 transition-colors duration-300 flex items-center justify-center">
-                  <span className="opacity-0 group-hover:opacity-100 transition-opacity font-body text-diamond-gold tracking-wide uppercase text-sm">
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/60 transition-colors duration-300 flex items-center justify-center">
+                  <span className="opacity-0 group-hover:opacity-100 transition-opacity font-body text-white tracking-wide uppercase text-sm">
                     View Details
                   </span>
                 </div>

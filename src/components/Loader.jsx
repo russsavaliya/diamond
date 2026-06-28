@@ -20,7 +20,7 @@ export default function Loader({ loading }) {
 
           <motion.div
             className="h-px"
-            style={{ background: 'linear-gradient(90deg, transparent, #c9a96e, #a07840, transparent)' }}
+            style={{ background: 'linear-gradient(90deg, transparent, #000000, #333333, transparent)' }}
             initial={{ width: 0, opacity: 0 }}
             animate={{ width: 160, opacity: [0, 1, 0] }}
             transition={{ repeat: Infinity, duration: 2.2, ease: 'easeInOut' }}

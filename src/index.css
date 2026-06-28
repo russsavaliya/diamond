@@ -5,10 +5,16 @@
   scroll-behavior: smooth;
 }
 
+/* ── Theme variables: change these two to switch the whole palette ── */
+:root {
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+}
+
 body {
   margin: 0;
-  background-color: #0a0a0a;
-  color: #e5e5e5;
+  background-color: var(--bg);
+  color: var(--fg);
   font-family: 'Raleway', sans-serif;
   overflow-x: hidden;
 }
@@ -17,27 +23,32 @@ body {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #0a0a0a;
+  background: var(--bg);
 }
 ::-webkit-scrollbar-thumb {
-  background: #c9a96e;
+  background: #000000;
   border-radius: 4px;
 }
 
 .glass {
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
 }
 
+/* Glass inside dark sections flips to white transparency */
+.dark-section .glass {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
 .text-gradient-gold {
-  background: linear-gradient(90deg, #c9a96e 0%, #e8d5b7 35%, #f5deb3 70%, #c9a96e 100%);
-  background-size: 200% 100%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  animation: shimmer 4s linear infinite;
+  background: none;
+  -webkit-background-clip: unset;
+  background-clip: unset;
+  color: #000000;
+  animation: none;
 }
 
 @keyframes shimmer {
@@ -73,12 +84,11 @@ body {
 .shimmer-bg {
   background: linear-gradient(
     110deg,
-    #e8d5b7 0%,
-    #ffffff 15%,
-    #c9a96e 35%,
-    #a07840 55%,
-    #e8d5b7 75%,
-    #ffffff 90%
+    #111111 0%,
+    #333333 25%,
+    #000000 50%,
+    #222222 75%,
+    #111111 100%
   );
   background-size: 300% 100%;
   animation: shimmer 4s linear infinite;
@@ -95,13 +105,13 @@ body {
   width: 18px;
   height: 18px;
   border-radius: 50%;
-  background: rgba(201, 169, 110, 0.45);
-  box-shadow: 0 0 18px 6px rgba(201, 169, 110, 0.35);
+  background: rgba(0, 0, 0, 0.35);
+  box-shadow: 0 0 18px 6px rgba(0, 0, 0, 0.15);
   pointer-events: none;
   z-index: 9999;
   transform: translate(-50%, -50%);
   transition: transform 0.12s ease-out, opacity 0.2s ease;
-  mix-blend-mode: screen;
+  mix-blend-mode: multiply;
 }
 
 @media (max-width: 768px) {
@@ -111,14 +121,14 @@ body {
 }
 
 .glow-border {
-  box-shadow: 0 0 0 1px rgba(201, 169, 110, 0.2), 0 0 25px rgba(201, 169, 110, 0.1);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.12), 0 2px 16px rgba(0, 0, 0, 0.06);
   transition: box-shadow 0.3s ease;
 }
 .glow-border:hover {
-  box-shadow: 0 0 0 1px rgba(201, 169, 110, 0.5), 0 0 40px rgba(201, 169, 110, 0.2);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3), 0 4px 24px rgba(0, 0, 0, 0.12);
 }
 
 @keyframes glowPulse {
-  0%, 100% { box-shadow: 0 0 20px rgba(201, 169, 110, 0.3); }
-  50% { box-shadow: 0 0 50px rgba(201, 169, 110, 0.7); }
+  0%, 100% { box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); }
+  50% { box-shadow: 0 0 40px rgba(0, 0, 0, 0.25); }
 }

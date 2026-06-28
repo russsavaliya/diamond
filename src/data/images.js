@@ -8,16 +8,16 @@ export const hero = {
   diamond: '/images/hero/hero-1.png',
 };
 
-// TODO: replace with actual diamond product photography
 export const diamonds = [
-  'https://placehold.co/500x500/0f0f0f/c9a96e?text=Diamond+1',
-  'https://placehold.co/500x500/0f0f0f/e5e5e5?text=Diamond+2',
-  'https://placehold.co/500x500/0f0f0f/c9a96e?text=Diamond+3',
-  'https://placehold.co/500x500/0f0f0f/e5e5e5?text=Diamond+4',
-  'https://placehold.co/500x500/0f0f0f/c9a96e?text=Diamond+5',
-  'https://placehold.co/500x500/0f0f0f/e5e5e5?text=Diamond+6',
-  'https://placehold.co/500x500/0f0f0f/c9a96e?text=Diamond+7',
-  'https://placehold.co/500x500/0f0f0f/e5e5e5?text=Diamond+8',
+  '/images/diamonds_cut/ROUND.png',
+  '/images/diamonds_cut/PRINCESS.png',
+  '/images/diamonds_cut/CUSHION.png',
+  '/images/diamonds_cut/EMERALD.png',
+  '/images/diamonds_cut/OVEL.png',
+  '/images/diamonds_cut/PEAR.png',
+  '/images/diamonds_cut/MARQUISE.png',
+  '/images/diamonds_cut/HEART.png',
+  '/images/diamonds_cut/REDIANT.png',
 ];
 
 // TODO: replace with actual factory photographs

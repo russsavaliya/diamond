@@ -31,12 +31,12 @@ export default function About() {
       </section>
 
       {/* MISSION & VISION */}
-      <section className="py-24 px-6 bg-[#0d0d0d]">
+      <section className="dark-section py-24 px-6 bg-[#0d0d0d]">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
           <AnimatedSection>
             <Card className="h-full">
-              <h3 className="font-heading text-2xl text-diamond-gold mb-4">Our Mission</h3>
-              <p className="font-body text-diamond-silver/70">
+              <h3 className="font-heading text-2xl text-white mb-4">Our Mission</h3>
+              <p className="font-body text-white/70">
                 To deliver ethically grown, exceptionally brilliant diamonds through sustainable CVD technology,
                 empowering jewelers worldwide with a transparent and reliable supply chain.
               </p>
@@ -44,8 +44,8 @@ export default function About() {
           </AnimatedSection>
           <AnimatedSection delay={0.15}>
             <Card className="h-full">
-              <h3 className="font-heading text-2xl text-diamond-gold mb-4">Our Vision</h3>
-              <p className="font-body text-diamond-silver/70">
+              <h3 className="font-heading text-2xl text-white mb-4">Our Vision</h3>
+              <p className="font-body text-white/70">
                 To be the world's most trusted name in lab-grown diamond jewellery, setting the global
                 standard for quality, innovation, and ethical luxury.
               </p>
@@ -72,17 +72,17 @@ export default function About() {
       </section>
 
       {/* CORE VALUES */}
-      <section className="py-24 px-6 bg-[#0d0d0d]">
+      <section className="dark-section py-24 px-6 bg-[#0d0d0d]">
         <AnimatedSection className="text-center mb-14">
-          <h2 className="font-heading text-3xl text-diamond-silver">Our Core Values</h2>
+          <h2 className="font-heading text-3xl text-white">Our Core Values</h2>
         </AnimatedSection>
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
           {coreValues.map((value, i) => (
             <AnimatedSection key={value.title} delay={i * 0.1}>
               <Card className="text-center h-full">
-                <value.icon className="text-3xl text-diamond-gold mx-auto mb-3" />
-                <h3 className="font-heading text-lg text-diamond-silver mb-2">{value.title}</h3>
-                <p className="font-body text-sm text-diamond-silver/60">{value.desc}</p>
+                <value.icon className="text-3xl text-white mx-auto mb-3" />
+                <h3 className="font-heading text-lg text-white mb-2">{value.title}</h3>
+                <p className="font-body text-sm text-white/60">{value.desc}</p>
               </Card>
             </AnimatedSection>
           ))}
@@ -100,7 +100,7 @@ export default function About() {
               <Card className="text-center">
                 <img src={teamImgs[i]} alt={member.name} className="rounded-xl w-full h-64 object-cover mb-4" />
                 <h3 className="font-heading text-lg text-diamond-silver">{member.name}</h3>
-                <p className="font-body text-sm text-diamond-gold">{member.role}</p>
+                <p className="font-body text-sm text-diamond-silver/60">{member.role}</p>
               </Card>
             </AnimatedSection>
           ))}
@@ -108,9 +108,9 @@ export default function About() {
       </section>
 
       {/* CERTIFICATIONS */}
-      <section className="py-24 px-6 bg-[#0d0d0d]">
+      <section className="dark-section py-24 px-6 bg-[#0d0d0d]">
         <AnimatedSection className="text-center mb-14">
-          <h2 className="font-heading text-3xl text-diamond-silver">Certifications</h2>
+          <h2 className="font-heading text-3xl text-white">Certifications</h2>
         </AnimatedSection>
         <div className="max-w-3xl mx-auto flex flex-wrap justify-center gap-8">
           {certificates.map((cert, i) => (
