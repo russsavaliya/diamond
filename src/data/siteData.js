@@ -1,23 +1,24 @@
 import {
-  FaGem,
-  FaCertificate,
-  FaLeaf,
-  FaGlobeAmericas,
-  FaSeedling,
-  FaFlask,
-  FaIndustry,
-  FaCut,
-  FaAward,
-} from 'react-icons/fa';
+  GiCutDiamond,
+  GiDiamondHard,
+  GiStarMedal,
+  GiLeafSwirl,
+  GiWorld,
+  GiCrystalGrowth,
+  GiChemicalDrop,
+  GiFactory,
+  GiMedal,
+  GiAtom,
+} from 'react-icons/gi';
 
 export const company = {
-  name: 'Shree Hari Diamtech',
-  tagline: 'Crafting Brilliance Through CVD Technology',
+  name: 'Cauer Lab Grown Diamonds',
+  tagline: 'Beyond Your Choice',
   shortIntro:
-    'Shree Hari Diamtech is a premium CVD (Chemical Vapor Deposition) diamond manufacturer, combining cutting-edge laboratory technology with generations of gem-cutting craftsmanship to create diamonds of exceptional brilliance, clarity, and ethical origin.',
+    'Cauer is a premium lab-grown diamond jewellery house, combining cutting-edge CVD technology with timeless craftsmanship to create pieces of exceptional brilliance, ethical origin, and enduring beauty.',
   address: '123 Diamond Exchange Road, Surat, Gujarat, India - 395003',
   phone: '+91 99999 55555',
-  email: 'info@shreehari-diamtech.com',
+  email: 'info@cauer.com',
   hours: 'Mon - Sat: 9:30 AM - 6:30 PM',
   social: {
     facebook: 'https://facebook.com',
@@ -29,22 +30,22 @@ export const company = {
 
 export const whyChooseUs = [
   {
-    icon: FaGem,
+    icon: GiDiamondHard,
     title: 'Uncompromising Quality',
     desc: 'Every diamond is grown and graded under strict quality control to ensure exceptional fire and clarity.',
   },
   {
-    icon: FaCertificate,
+    icon: GiStarMedal,
     title: 'Certified CVD Process',
     desc: 'Our diamonds are cultivated using state-of-the-art Chemical Vapor Deposition technology and independently certified.',
   },
   {
-    icon: FaLeaf,
+    icon: GiLeafSwirl,
     title: 'Ethical Sourcing',
     desc: 'Conflict-free, sustainably grown diamonds with a fraction of the environmental footprint of mining.',
   },
   {
-    icon: FaGlobeAmericas,
+    icon: GiWorld,
     title: 'Global Export',
     desc: 'Trusted by jewelers and distributors across 20+ countries with seamless international logistics.',
   },
@@ -52,27 +53,27 @@ export const whyChooseUs = [
 
 export const processSteps = [
   {
-    icon: FaSeedling,
+    icon: GiCrystalGrowth,
     title: 'Rough Diamond Growth',
     desc: 'A thin diamond seed is placed in a high-tech growth chamber where carbon-rich gases are introduced.',
   },
   {
-    icon: FaFlask,
+    icon: GiChemicalDrop,
     title: 'Chemical Vapor Deposition',
     desc: 'Plasma energy breaks down the gases, depositing pure carbon atoms layer by layer onto the seed.',
   },
   {
-    icon: FaCut,
+    icon: GiCutDiamond,
     title: 'Cutting & Shaping',
     desc: 'Master craftsmen cut the rough diamond into precise, brilliant shapes using advanced laser precision.',
   },
   {
-    icon: FaIndustry,
+    icon: GiFactory,
     title: 'Polishing',
     desc: 'Each facet is meticulously polished to maximize light return, fire, and overall brilliance.',
   },
   {
-    icon: FaAward,
+    icon: GiMedal,
     title: 'Certification & Export',
     desc: 'Diamonds are graded by recognized gemological institutes before being packaged for global export.',
   },
@@ -113,7 +114,7 @@ export const testimonials = [
     name: 'Arjun Mehta',
     role: 'Jewelry Distributor, Mumbai',
     quote:
-      'Shree Hari Diamtech delivers consistent quality and brilliance that our customers love. Their CVD diamonds are indistinguishable from mined stones in every way that matters.',
+      'Cauer delivers consistent quality and brilliance that our customers love. Their CVD diamonds are indistinguishable from mined stones in every way that matters.',
   },
   {
     name: 'Sophie Laurent',
@@ -131,17 +132,17 @@ export const testimonials = [
     name: 'Fatima Al-Sayed',
     role: 'Designer, Dubai',
     quote:
-      'Working with Shree Hari has elevated our designs — their stones have a fire and clarity that sets them apart in a competitive market.',
+      'Working with Cauer has elevated our designs — their stones have a fire and clarity that sets them apart in a competitive market.',
   },
 ];
 
 export const coreValues = [
-  { icon: FaGem, title: 'Integrity', desc: 'Honest, transparent dealings with every partner and client.' },
-  { icon: FaLeaf, title: 'Sustainability', desc: 'Minimizing environmental impact through lab-grown innovation.' },
-  { icon: FaCertificate, title: 'Excellence', desc: 'Relentless pursuit of quality in every diamond we produce.' },
-  { icon: FaGlobeAmericas, title: 'Global Reach', desc: 'Serving clients and partners across continents.' },
-  { icon: FaFlask, title: 'Innovation', desc: 'Investing continually in advanced CVD growth technology.' },
-  { icon: FaAward, title: 'Trust', desc: 'Building long-term relationships through reliability.' },
+  { icon: GiDiamondHard, title: 'Integrity', desc: 'Honest, transparent dealings with every partner and client.' },
+  { icon: GiLeafSwirl, title: 'Sustainability', desc: 'Minimizing environmental impact through lab-grown innovation.' },
+  { icon: GiStarMedal, title: 'Excellence', desc: 'Relentless pursuit of quality in every diamond we produce.' },
+  { icon: GiWorld, title: 'Global Reach', desc: 'Serving clients and partners across continents.' },
+  { icon: GiAtom, title: 'Innovation', desc: 'Investing continually in advanced CVD growth technology.' },
+  { icon: GiMedal, title: 'Trust', desc: 'Building long-term relationships through reliability.' },
 ];
 
 export const team = [
@@ -163,10 +164,28 @@ export const diamondProducts = [
   { name: 'Heritage Cushion', category: 'Cushion', carat: '1.0 - 3.2 ct', clarity: 'VVS2' },
 ];
 
+export const jewelleryCategories = ['All', 'Rings', 'Necklaces', 'Earrings', 'Bracelets'];
+
+export const jewelleryProducts = [
+  { name: 'Eternal Solitaire Ring', category: 'Rings', stone: 'Round Brilliant', metal: '18K White Gold' },
+  { name: 'Infinity Engagement Ring', category: 'Rings', stone: 'Princess Cut', metal: '18K Rose Gold' },
+  { name: 'Lumina Eternity Band', category: 'Rings', stone: 'Round Brilliant', metal: 'Platinum' },
+  { name: 'Aurora Cocktail Ring', category: 'Rings', stone: 'Oval Cut', metal: '18K Yellow Gold' },
+  { name: 'Stellar Pendant Necklace', category: 'Necklaces', stone: 'Round Brilliant', metal: '18K White Gold' },
+  { name: 'Diamond Tennis Necklace', category: 'Necklaces', stone: 'Round Brilliant', metal: 'Platinum' },
+  { name: 'Celestial Drop Necklace', category: 'Necklaces', stone: 'Pear Cut', metal: '18K Rose Gold' },
+  { name: 'Classic Diamond Studs', category: 'Earrings', stone: 'Round Brilliant', metal: '18K White Gold' },
+  { name: 'Halo Hoop Earrings', category: 'Earrings', stone: 'Round Brilliant', metal: 'Platinum' },
+  { name: 'Cascade Drop Earrings', category: 'Earrings', stone: 'Marquise Cut', metal: '18K Rose Gold' },
+  { name: 'Diamond Tennis Bracelet', category: 'Bracelets', stone: 'Round Brilliant', metal: '18K White Gold' },
+  { name: 'Bangle with Diamond Accents', category: 'Bracelets', stone: 'Round Brilliant', metal: '18K Yellow Gold' },
+];
+
 export const navLinks = [
   { name: 'Home', path: '/' },
   { name: 'About', path: '/about' },
   { name: 'Diamonds', path: '/diamonds' },
+  { name: 'Jewellery', path: '/jewellery' },
   { name: 'Process', path: '/process' },
   { name: 'Gallery', path: '/gallery' },
   { name: 'Contact', path: '/contact' },

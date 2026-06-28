@@ -1,5 +1,4 @@
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaGem } from 'react-icons/fa';
 
 export default function Loader({ loading }) {
   return (
@@ -8,21 +7,24 @@ export default function Loader({ loading }) {
         <motion.div
           className="fixed inset-0 z-[10000] flex flex-col items-center justify-center bg-diamond-black"
           exit={{ opacity: 0 }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.8 }}
         >
+          <motion.img
+            src="/images/logo.png"
+            alt="Cauer"
+            className="h-20 mb-8"
+            initial={{ opacity: 0, scale: 0.92 }}
+            animate={{ opacity: [0.4, 1, 0.4], scale: [0.97, 1, 0.97] }}
+            transition={{ repeat: Infinity, duration: 2.2, ease: 'easeInOut' }}
+          />
+
           <motion.div
-            animate={{ rotate: 360 }}
-            transition={{ repeat: Infinity, duration: 1.6, ease: 'linear' }}
-          >
-            <FaGem className="text-6xl text-diamond-gold drop-shadow-[0_0_15px_rgba(212,175,55,0.7)]" />
-          </motion.div>
-          <motion.p
-            className="mt-6 font-heading text-diamond-silver tracking-[0.3em] text-sm uppercase"
-            animate={{ opacity: [0.3, 1, 0.3] }}
-            transition={{ repeat: Infinity, duration: 1.6 }}
-          >
-            Shree Hari Diamtech
-          </motion.p>
+            className="h-px"
+            style={{ background: 'linear-gradient(90deg, transparent, #c9a96e, #a07840, transparent)' }}
+            initial={{ width: 0, opacity: 0 }}
+            animate={{ width: 160, opacity: [0, 1, 0] }}
+            transition={{ repeat: Infinity, duration: 2.2, ease: 'easeInOut' }}
+          />
         </motion.div>
       )}
     </AnimatePresence>
