@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { HiMenuAlt3, HiX } from 'react-icons/hi';
-import { GiCutDiamond } from 'react-icons/gi';
 import { navLinks } from '../data/siteData';
 
 export default function Navbar() {
@@ -19,22 +18,13 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 left-0 w-full z-[1000] transition-all duration-500 ${
         scrolled
-          ? 'bg-diamond-black/95 backdrop-blur-md shadow-[0_1px_0_rgba(0,212,255,0.15),0_4px_24px_rgba(0,0,0,0.4)]'
+          ? 'bg-diamond-black/95 backdrop-blur-md shadow-[0_1px_0_rgba(201,169,110,0.15),0_4px_24px_rgba(0,0,0,0.4)]'
           : 'bg-transparent'
       }`}
     >
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
-        <Link to="/" className="flex items-center gap-2 font-heading text-lg text-diamond-silver group">
-          <motion.span
-            className="text-diamond-gold drop-shadow-[0_0_8px_rgba(0,212,255,0.6)]"
-            animate={{ rotate: [0, 10, -10, 0] }}
-            transition={{ repeat: Infinity, duration: 6, ease: 'easeInOut' }}
-          >
-            <GiCutDiamond className="text-xl" />
-          </motion.span>
-          <span className="group-hover:text-diamond-silver transition-colors">
-            Shree Hari <span className="text-diamond-gold">Diamtech</span>
-          </span>
+      <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-3">
+        <Link to="/" className="flex items-center">
+          <img src="/images/logo.png" alt="Cauer" className="h-9 w-auto object-contain" />
         </Link>
 
         <div className="hidden md:flex items-center gap-8">
@@ -55,7 +45,7 @@ export default function Navbar() {
                     <motion.span
                       layoutId="nav-underline"
                       className="absolute bottom-0 left-0 w-full h-px bg-diamond-gold"
-                      style={{ boxShadow: '0 0 8px rgba(0,212,255,0.8)' }}
+                      style={{ boxShadow: '0 0 8px rgba(201,169,110,0.8)' }}
                     />
                   )}
                 </>
@@ -91,7 +81,7 @@ export default function Navbar() {
               className="fixed top-0 right-0 h-full w-72 bg-[#0d0d0d] border-l border-diamond-gold/10 z-[1100] flex flex-col p-8 gap-6 shadow-2xl"
             >
               <div className="flex items-center justify-between mb-4">
-                <GiCutDiamond className="text-diamond-gold text-xl drop-shadow-[0_0_8px_rgba(0,212,255,0.6)]" />
+                <img src="/images/logo.png" alt="Cauer" className="h-8 w-auto object-contain" />
                 <button
                   className="text-diamond-silver/70 text-2xl hover:text-diamond-gold transition-colors"
                   onClick={() => setMenuOpen(false)}

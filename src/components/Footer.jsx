@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import { GiCutDiamond } from 'react-icons/gi';
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
 import { company, navLinks } from '../data/siteData';
 
@@ -8,9 +7,8 @@ export default function Footer() {
     <footer className="bg-black border-t border-diamond-gold/10 pt-16 pb-8 px-6">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
         <div>
-          <Link to="/" className="flex items-center gap-2 font-heading text-lg text-diamond-silver mb-4">
-            <GiCutDiamond className="text-diamond-gold drop-shadow-[0_0_6px_rgba(0,212,255,0.5)]" />
-            Shree Hari Diamtech
+          <Link to="/" className="block mb-4">
+            <img src="/images/logo.png" alt="Cauer" className="h-10" />
           </Link>
           <p className="font-body text-sm text-diamond-silver/60 leading-relaxed">{company.shortIntro}</p>
         </div>
@@ -48,7 +46,7 @@ export default function Footer() {
               placeholder="Your email"
               className="bg-white/5 border border-white/10 rounded-l-full px-4 py-2 text-sm font-body text-diamond-silver flex-1 focus:outline-none focus:border-diamond-gold transition-colors"
             />
-            <button className="bg-diamond-gold text-diamond-black px-4 rounded-r-full font-body text-sm font-semibold hover:bg-[#33ddff] transition-colors">
+            <button className="bg-diamond-gold text-diamond-black px-4 rounded-r-full font-body text-sm font-semibold hover:bg-diamond-violet transition-colors">
               Join
             </button>
           </form>
@@ -64,7 +62,7 @@ export default function Footer() {
                 href={href}
                 target="_blank"
                 rel="noreferrer"
-                className="hover:text-diamond-gold transition-colors hover:drop-shadow-[0_0_6px_rgba(0,212,255,0.7)] text-lg"
+                className="hover:text-diamond-gold transition-colors hover:drop-shadow-[0_0_6px_rgba(201,169,110,0.7)] text-lg"
               >
                 <Icon />
               </a>
@@ -74,7 +72,7 @@ export default function Footer() {
       </div>
 
       <div className="max-w-7xl mx-auto border-t border-white/5 mt-10 pt-6 text-center font-body text-xs text-diamond-silver/30 tracking-widest">
-        &copy; {new Date().getFullYear()} Shree Hari Diamtech. All rights reserved.
+        &copy; {new Date().getFullYear()} Cauer Lab Grown Diamonds. All rights reserved.
       </div>
     </footer>
   );

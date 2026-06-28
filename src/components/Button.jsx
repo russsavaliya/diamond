@@ -14,7 +14,7 @@ export default function Button({
     'relative overflow-hidden inline-flex items-center justify-center px-8 py-3 font-body font-semibold text-sm tracking-[0.12em] uppercase rounded-full transition-colors duration-300 shine-overlay';
 
   const variants = {
-    primary: 'bg-diamond-gold text-diamond-black hover:bg-[#33ddff]',
+    primary: 'bg-diamond-gold text-diamond-black hover:bg-diamond-violet',
     secondary: 'bg-transparent border border-diamond-gold text-diamond-gold hover:bg-diamond-gold/10',
   };
 
@@ -26,8 +26,8 @@ export default function Button({
     whileHover: {
       scale: 1.05,
       boxShadow: variant === 'primary'
-        ? '0 0 30px rgba(0,212,255,0.55), 0 0 60px rgba(0,212,255,0.2)'
-        : '0 0 20px rgba(0,212,255,0.35)',
+        ? '0 0 30px rgba(201,169,110,0.55), 0 0 60px rgba(201,169,110,0.2)'
+        : '0 0 20px rgba(201,169,110,0.35)',
     },
     whileTap: { scale: 0.97 },
     transition: { type: 'spring', stiffness: 300, damping: 20 },

@@ -10,10 +10,10 @@ export default {
       },
       colors: {
         'diamond-black': '#0a0a0a',
-        'diamond-blue': '#b9e4ff',
+        'diamond-blue': '#e8d5b7',
         'diamond-silver': '#e5e5e5',
-        'diamond-gold': '#00d4ff',
-        'diamond-violet': '#8b5cf6',
+        'diamond-gold': '#c9a96e',
+        'diamond-violet': '#a07840',
       },
       animation: {
         shimmer: 'shimmer 3s linear infinite',
@@ -32,8 +32,8 @@ export default {
           '50%': { transform: 'translateY(-12px)' },
         },
         glowPulse: {
-          '0%, 100%': { boxShadow: '0 0 20px rgba(0, 212, 255, 0.3)' },
-          '50%': { boxShadow: '0 0 50px rgba(0, 212, 255, 0.7)' },
+          '0%, 100%': { boxShadow: '0 0 20px rgba(201, 169, 110, 0.3)' },
+          '50%': { boxShadow: '0 0 50px rgba(201, 169, 110, 0.7)' },
         },
         spinReverse: {
           '0%': { transform: 'rotate(360deg)' },

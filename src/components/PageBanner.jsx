@@ -33,7 +33,7 @@ export default function PageBanner({ title, crumb }) {
       {/* Decorative bottom line */}
       <motion.div
         className="absolute bottom-0 left-1/2 -translate-x-1/2 h-px"
-        style={{ background: 'linear-gradient(90deg, transparent, #00d4ff, #8b5cf6, transparent)' }}
+        style={{ background: 'linear-gradient(90deg, transparent, #c9a96e, #a07840, transparent)' }}
         initial={{ width: 0, opacity: 0 }}
         animate={{ width: 280, opacity: 1 }}
         transition={{ delay: 0.5, duration: 1, ease: 'easeOut' }}

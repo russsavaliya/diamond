@@ -12,13 +12,13 @@ import {
 } from 'react-icons/gi';
 
 export const company = {
-  name: 'Shree Hari Diamtech',
-  tagline: 'Crafting Brilliance Through CVD Technology',
+  name: 'Cauer Lab Grown Diamonds',
+  tagline: 'Beyond Your Choice',
   shortIntro:
-    'Shree Hari Diamtech is a premium CVD (Chemical Vapor Deposition) diamond manufacturer, combining cutting-edge laboratory technology with generations of gem-cutting craftsmanship to create diamonds of exceptional brilliance, clarity, and ethical origin.',
+    'Cauer is a premium lab-grown diamond jewellery house, combining cutting-edge CVD technology with timeless craftsmanship to create pieces of exceptional brilliance, ethical origin, and enduring beauty.',
   address: '123 Diamond Exchange Road, Surat, Gujarat, India - 395003',
   phone: '+91 99999 55555',
-  email: 'info@shreehari-diamtech.com',
+  email: 'info@cauer.com',
   hours: 'Mon - Sat: 9:30 AM - 6:30 PM',
   social: {
     facebook: 'https://facebook.com',
@@ -114,7 +114,7 @@ export const testimonials = [
     name: 'Arjun Mehta',
     role: 'Jewelry Distributor, Mumbai',
     quote:
-      'Shree Hari Diamtech delivers consistent quality and brilliance that our customers love. Their CVD diamonds are indistinguishable from mined stones in every way that matters.',
+      'Cauer delivers consistent quality and brilliance that our customers love. Their CVD diamonds are indistinguishable from mined stones in every way that matters.',
   },
   {
     name: 'Sophie Laurent',
@@ -132,7 +132,7 @@ export const testimonials = [
     name: 'Fatima Al-Sayed',
     role: 'Designer, Dubai',
     quote:
-      'Working with Shree Hari has elevated our designs — their stones have a fire and clarity that sets them apart in a competitive market.',
+      'Working with Cauer has elevated our designs — their stones have a fire and clarity that sets them apart in a competitive market.',
   },
 ];
 
@@ -164,10 +164,28 @@ export const diamondProducts = [
   { name: 'Heritage Cushion', category: 'Cushion', carat: '1.0 - 3.2 ct', clarity: 'VVS2' },
 ];
 
+export const jewelleryCategories = ['All', 'Rings', 'Necklaces', 'Earrings', 'Bracelets'];
+
+export const jewelleryProducts = [
+  { name: 'Eternal Solitaire Ring', category: 'Rings', stone: 'Round Brilliant', metal: '18K White Gold' },
+  { name: 'Infinity Engagement Ring', category: 'Rings', stone: 'Princess Cut', metal: '18K Rose Gold' },
+  { name: 'Lumina Eternity Band', category: 'Rings', stone: 'Round Brilliant', metal: 'Platinum' },
+  { name: 'Aurora Cocktail Ring', category: 'Rings', stone: 'Oval Cut', metal: '18K Yellow Gold' },
+  { name: 'Stellar Pendant Necklace', category: 'Necklaces', stone: 'Round Brilliant', metal: '18K White Gold' },
+  { name: 'Diamond Tennis Necklace', category: 'Necklaces', stone: 'Round Brilliant', metal: 'Platinum' },
+  { name: 'Celestial Drop Necklace', category: 'Necklaces', stone: 'Pear Cut', metal: '18K Rose Gold' },
+  { name: 'Classic Diamond Studs', category: 'Earrings', stone: 'Round Brilliant', metal: '18K White Gold' },
+  { name: 'Halo Hoop Earrings', category: 'Earrings', stone: 'Round Brilliant', metal: 'Platinum' },
+  { name: 'Cascade Drop Earrings', category: 'Earrings', stone: 'Marquise Cut', metal: '18K Rose Gold' },
+  { name: 'Diamond Tennis Bracelet', category: 'Bracelets', stone: 'Round Brilliant', metal: '18K White Gold' },
+  { name: 'Bangle with Diamond Accents', category: 'Bracelets', stone: 'Round Brilliant', metal: '18K Yellow Gold' },
+];
+
 export const navLinks = [
   { name: 'Home', path: '/' },
   { name: 'About', path: '/about' },
   { name: 'Diamonds', path: '/diamonds' },
+  { name: 'Jewellery', path: '/jewellery' },
   { name: 'Process', path: '/process' },
   { name: 'Gallery', path: '/gallery' },
   { name: 'Contact', path: '/contact' },

@@ -17,13 +17,15 @@ export default function About() {
         <AnimatedSection variant="fadeRight">
           <h2 className="font-heading text-3xl text-diamond-silver mb-6">Our Story</h2>
           <p className="font-body text-diamond-silver/70 leading-relaxed mb-4">
-            Founded with a vision to revolutionize the diamond industry, Shree Hari Diamtech has grown from a
-            small workshop into a globally recognized name in CVD diamond manufacturing. Over nearly two decades,
-            we have invested in advanced growth technology, master craftsmanship, and rigorous quality standards.
+            Founded with a vision to redefine luxury jewellery, Cauer has grown from a passionate
+            studio into a globally recognized name in lab-grown diamond jewellery. Over nearly two
+            decades, we have invested in advanced CVD growth technology, master craftsmanship, and
+            rigorous quality standards.
           </p>
           <p className="font-body text-diamond-silver/70 leading-relaxed">
-            Today, our diamonds travel from our growth chambers to jewelry houses across the world, carrying with
-            them a promise of brilliance, ethics, and unmatched craftsmanship.
+            Today, our diamonds travel from our growth chambers to jewellery houses across the world,
+            carrying with them a promise of brilliance, ethics, and unmatched craftsmanship — truly
+            Beyond Your Choice.
           </p>
         </AnimatedSection>
       </section>
@@ -44,16 +46,15 @@ export default function About() {
             <Card className="h-full">
               <h3 className="font-heading text-2xl text-diamond-gold mb-4">Our Vision</h3>
               <p className="font-body text-diamond-silver/70">
-                To be the world's most trusted name in lab-grown diamonds, setting the global standard for
-                quality, innovation, and ethical luxury.
+                To be the world's most trusted name in lab-grown diamond jewellery, setting the global
+                standard for quality, innovation, and ethical luxury.
               </p>
             </Card>
           </AnimatedSection>
         </div>
       </section>
 
-      {/* MANUFACTURING FACILITY - placeholder */}
-      {/* FACTORY DETAILS TO BE ADDED LATER */}
+      {/* MANUFACTURING FACILITY */}
       <section className="py-24 px-6">
         <AnimatedSection className="text-center mb-12">
           <h2 className="font-heading text-3xl text-diamond-silver">Our Manufacturing Facility</h2>

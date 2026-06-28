@@ -8,8 +8,6 @@ import Sparkles from '../components/Sparkles';
 import { hero, diamonds, factory } from '../data/images';
 import { whyChooseUs, processSteps, stats, testimonials } from '../data/siteData';
 
-const heroWords = 'Crafting Brilliance Through CVD Technology'.split(' ');
-
 export default function Home() {
   return (
     <div>
@@ -26,30 +24,22 @@ export default function Home() {
             initial={{ opacity: 0, scale: 0.7 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1 }}
-            className="flex justify-center mb-6"
+            className="flex justify-center mb-8 mt-16"
           >
-            <img src={hero.diamond} alt="Shree Hari Diamtech diamond" className="w-40 md:w-70 animate-float drop-shadow-[0_0_40px_rgba(185,228,255,0.4)]" />
+            <img src={hero.diamond} alt="Cauer lab grown diamond" className="w-40 md:w-70 animate-float drop-shadow-[0_0_40px_rgba(201,169,110,0.35)]" />
           </motion.div>
 
-          <h1 className="font-heading text-4xl md:text-6xl text-diamond-silver mb-4">
-            Shree Hari <span className="text-gradient-gold">Diamtech</span>
-          </h1>
-
-          <p className="font-accent text-xl md:text-2xl text-diamond-blue flex flex-wrap justify-center gap-2 mb-10">
-            {heroWords.map((word, i) => (
-              <motion.span
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.6 + i * 0.1, duration: 0.5 }}
-              >
-                {word}
-              </motion.span>
-            ))}
-          </p>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3, duration: 0.7 }}
+            className="flex justify-center mb-10"
+          >
+            <img src="/images/logo.png" alt="Cauer" className="w-64 md:w-96 drop-shadow-[0_0_30px_rgba(201,169,110,0.4)]" />
+          </motion.div>
 
           <div className="flex flex-wrap justify-center gap-4">
-            <Button to="/diamonds" variant="primary">Explore Diamonds</Button>
+            <Button to="/jewellery" variant="primary">Explore Jewellery</Button>
             <Button to="/contact" variant="secondary">Contact Us</Button>
           </div>
         </div>
@@ -58,12 +48,12 @@ export default function Home() {
       {/* ABOUT PREVIEW */}
       <AnimatedSection as="section" className="py-24 px-6 max-w-5xl mx-auto text-center">
         <h2 className="font-heading text-3xl md:text-4xl text-diamond-silver mb-6">
-          Redefining Diamonds for a <span className="text-diamond-gold">New Era</span>
+          Redefining Luxury for a <span className="text-gradient-gold">New Era</span>
         </h2>
         <p className="font-body text-diamond-silver/70 leading-relaxed mb-8">
-          Shree Hari Diamtech is a premium CVD diamond manufacturer, combining cutting-edge laboratory
-          technology with generations of gem-cutting craftsmanship to create diamonds of exceptional
-          brilliance, clarity, and ethical origin.
+          Cauer is a premium lab-grown diamond jewellery house, combining cutting-edge CVD technology
+          with timeless craftsmanship to create pieces of exceptional brilliance, ethical origin,
+          and enduring beauty.
         </p>
         <Link to="/about" className="font-body text-diamond-gold underline hover:text-diamond-blue transition-colors">
           Learn More &rarr;
@@ -88,7 +78,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* DIAMOND GALLERY PREVIEW */}
+      {/* JEWELLERY PREVIEW */}
       <section className="py-24 px-6">
         <AnimatedSection className="text-center mb-14">
           <h2 className="font-heading text-3xl md:text-4xl text-diamond-silver">Our Diamonds</h2>
@@ -108,7 +98,7 @@ export default function Home() {
           ))}
         </div>
         <div className="text-center mt-12">
-          <Button to="/diamonds">View All Diamonds</Button>
+          <Button to="/jewellery">View Jewellery Collection</Button>
         </div>
       </section>
 
@@ -139,14 +129,13 @@ export default function Home() {
       {/* FACTORY GLIMPSE */}
       <section className="py-24 px-6">
         <AnimatedSection className="text-center mb-14">
-          <h2 className="font-heading text-3xl md:text-4xl text-diamond-silver">A Glimpse Into Our Factory</h2>
-          <p className="font-body text-diamond-silver/50 text-sm mt-2">Factory details to be added</p>
+          <h2 className="font-heading text-3xl md:text-4xl text-diamond-silver">A Glimpse Into Our Facility</h2>
         </AnimatedSection>
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
           {[factory.shot1, factory.shot2, factory.shot3].map((src, i) => (
             <AnimatedSection key={i} delay={i * 0.1}>
               <div className="overflow-hidden rounded-xl shine-overlay">
-                <img src={src} alt={`Factory glimpse ${i + 1}`} className="w-full h-56 object-cover hover:scale-110 transition-transform duration-500" />
+                <img src={src} alt={`Facility glimpse ${i + 1}`} className="w-full h-56 object-cover hover:scale-110 transition-transform duration-500" />
               </div>
             </AnimatedSection>
           ))}
@@ -186,7 +175,7 @@ export default function Home() {
       {/* CTA BANNER */}
       <AnimatedSection as="section" className="py-24 px-6 text-center bg-gradient-to-r from-[#111] via-[#1a1a1a] to-[#111]">
         <h2 className="font-heading text-3xl md:text-4xl text-diamond-silver mb-6">
-          Ready to Discover Your Perfect Diamond?
+          Ready to Discover Your Perfect Piece?
         </h2>
         <Button to="/contact">Get in Touch</Button>
       </AnimatedSection>

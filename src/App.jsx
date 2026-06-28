@@ -10,6 +10,7 @@ import Diamonds from './pages/Diamonds';
 import Process from './pages/Process';
 import Contact from './pages/Contact';
 import Gallery from './pages/Gallery';
+import Jewellery from './pages/Jewellery';
 import NotFound from './pages/NotFound';
 
 function PageWrapper({ children }) {
@@ -33,6 +34,7 @@ function AnimatedRoutes() {
         <Route path="/" element={<PageWrapper><Home /></PageWrapper>} />
         <Route path="/about" element={<PageWrapper><About /></PageWrapper>} />
         <Route path="/diamonds" element={<PageWrapper><Diamonds /></PageWrapper>} />
+        <Route path="/jewellery" element={<PageWrapper><Jewellery /></PageWrapper>} />
         <Route path="/process" element={<PageWrapper><Process /></PageWrapper>} />
         <Route path="/contact" element={<PageWrapper><Contact /></PageWrapper>} />
         <Route path="/gallery" element={<PageWrapper><Gallery /></PageWrapper>} />
