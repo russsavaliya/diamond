@@ -37,8 +37,8 @@ export default function Contact() {
   };
 
   const inputClass = (field) =>
-    `w-full bg-white/5 border rounded-lg px-4 py-3 font-body text-sm text-diamond-silver focus:outline-none focus:border-diamond-gold transition-colors ${
-      errors[field] ? 'border-red-500' : 'border-white/10'
+    `w-full bg-black/5 border rounded-lg px-4 py-3 font-body text-sm text-diamond-silver focus:outline-none focus:border-black transition-colors ${
+      errors[field] ? 'border-red-500' : 'border-black/15'
     }`;
 
   const infoItems = [
@@ -55,7 +55,7 @@ export default function Contact() {
         {infoItems.map((item, i) => (
           <AnimatedSection key={item.label} delay={i * 0.1}>
             <Card className="text-center h-full">
-              <item.icon className="text-4xl text-diamond-gold mx-auto mb-3 drop-shadow-[0_0_8px_rgba(0,212,255,0.5)]" />
+              <item.icon className="text-4xl text-diamond-gold mx-auto mb-3" />
               <h3 className="font-heading text-diamond-silver mb-2 tracking-wide">{item.label}</h3>
               <p className="font-body text-sm text-diamond-silver/60">{item.value}</p>
             </Card>
@@ -63,7 +63,7 @@ export default function Contact() {
         ))}
         <AnimatedSection delay={0.3} className="lg:col-span-3 md:col-span-1">
           <Card className="text-center">
-            <HiClock className="text-4xl text-diamond-gold mx-auto mb-3 drop-shadow-[0_0_8px_rgba(0,212,255,0.5)]" />
+            <HiClock className="text-4xl text-diamond-gold mx-auto mb-3" />
             <h3 className="font-heading text-diamond-silver mb-2 tracking-wide">Working Hours</h3>
             <p className="font-body text-sm text-diamond-silver/60">{company.hours}</p>
           </Card>
@@ -129,7 +129,7 @@ export default function Contact() {
         </AnimatedSection>
 
         <AnimatedSection variant="fadeLeft">
-          <div className="rounded-2xl overflow-hidden h-full min-h-[400px] border border-diamond-gold/10">
+          <div className="rounded-2xl overflow-hidden h-full min-h-[400px] border border-black/10">
             <iframe
               title="Shree Hari Diamtech location"
               src="https://maps.google.com/maps?q=Surat,Gujarat,India&t=&z=13&ie=UTF8&iwloc=&output=embed"
@@ -156,7 +156,7 @@ export default function Contact() {
               href={href}
               target="_blank"
               rel="noreferrer"
-              className="text-diamond-silver/50 hover:text-diamond-gold hover:drop-shadow-[0_0_8px_rgba(0,212,255,0.7)] transition-all duration-300"
+              className="text-diamond-silver/50 hover:text-diamond-silver transition-colors duration-300"
             >
               <Icon />
             </a>

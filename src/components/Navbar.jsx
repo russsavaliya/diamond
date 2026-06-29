@@ -16,24 +16,24 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 w-full z-[1000] transition-all duration-500 ${
+      className={`fixed top-0 left-0 w-full z-[1000] transition-all duration-500 bg-diamond-black/95 backdrop-blur-md ${
         scrolled
-          ? 'bg-diamond-black/95 backdrop-blur-md shadow-[0_1px_0_rgba(201,169,110,0.15),0_4px_24px_rgba(0,0,0,0.4)]'
-          : 'bg-transparent'
+          ? 'shadow-[0_1px_0_rgba(0,0,0,0.1),0_4px_24px_rgba(0,0,0,0.08)]'
+          : ''
       }`}
     >
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-3">
+      <div className="max-w-7xl mx-auto grid grid-cols-3 items-center px-6 py-3">
         <Link to="/" className="flex items-center">
-          <img src="/images/logo.png" alt="Cauer" className="h-9 w-auto object-contain" />
+          <img src="/images/logo.png" alt="Cauer" className="h-12 w-auto object-contain" />
         </Link>
 
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center justify-center gap-8">
           {navLinks.map((link) => (
             <NavLink
               key={link.path}
               to={link.path}
               className={({ isActive }) =>
-                `font-body text-xs uppercase tracking-[0.15em] transition-colors relative pb-1 ${
+                `font-body text-xs font-semibold uppercase tracking-[0.15em] transition-colors relative pb-1 ${
                   isActive ? 'text-diamond-gold' : 'text-diamond-silver/80 hover:text-diamond-gold'
                 }`
               }
@@ -45,7 +45,6 @@ export default function Navbar() {
                     <motion.span
                       layoutId="nav-underline"
                       className="absolute bottom-0 left-0 w-full h-px bg-diamond-gold"
-                      style={{ boxShadow: '0 0 8px rgba(201,169,110,0.8)' }}
                     />
                   )}
                 </>
@@ -54,13 +53,15 @@ export default function Navbar() {
           ))}
         </div>
 
-        <button
-          className="md:hidden text-diamond-silver text-2xl hover:text-diamond-gold transition-colors"
-          onClick={() => setMenuOpen(true)}
-          aria-label="Open menu"
-        >
-          <HiMenuAlt3 />
-        </button>
+        <div className="flex justify-end">
+          <button
+            className="md:hidden text-diamond-silver text-2xl hover:text-diamond-gold transition-colors"
+            onClick={() => setMenuOpen(true)}
+            aria-label="Open menu"
+          >
+            <HiMenuAlt3 />
+          </button>
+        </div>
       </div>
 
       <AnimatePresence>
@@ -78,7 +79,7 @@ export default function Navbar() {
               animate={{ x: 0 }}
               exit={{ x: '100%' }}
               transition={{ duration: 0.35, ease: 'easeInOut' }}
-              className="fixed top-0 right-0 h-full w-72 bg-[#0d0d0d] border-l border-diamond-gold/10 z-[1100] flex flex-col p-8 gap-6 shadow-2xl"
+              className="fixed top-0 right-0 h-full w-72 bg-diamond-black border-l border-diamond-gold/20 z-[1100] flex flex-col p-8 gap-6 shadow-2xl"
             >
               <div className="flex items-center justify-between mb-4">
                 <img src="/images/logo.png" alt="Cauer" className="h-8 w-auto object-contain" />

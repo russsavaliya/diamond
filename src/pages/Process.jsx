@@ -1,7 +1,7 @@
 import PageBanner from '../components/PageBanner';
 import AnimatedSection from '../components/AnimatedSection';
 import { processSteps, detailedProcess } from '../data/siteData';
-import { factory, diamonds } from '../data/images';
+import { factory, process as processImages } from '../data/images';
 
 export default function Process() {
   return (
@@ -19,7 +19,7 @@ export default function Process() {
             >
               <AnimatedSection variant={reverse ? 'fadeLeft' : 'fadeRight'} className="flex-1">
                 <img
-                  src={diamonds[i % diamonds.length]}
+                  src={processImages[`step_${i + 1}`]}
                   alt={step.title}
                   className="rounded-2xl w-full h-72 object-cover shine-overlay"
                 />
@@ -47,8 +47,8 @@ export default function Process() {
       {/* FACTORY EQUIPMENT DETAILS TO BE ADDED */}
       <section className="py-24 px-6 bg-[#0d0d0d]">
         <AnimatedSection className="text-center mb-12">
-          <h2 className="font-heading text-3xl text-diamond-silver">Factory Equipment Showcase</h2>
-          <p className="font-body text-diamond-silver/50 text-sm mt-2">
+          <h2 className="font-heading text-3xl text-diamond-black">Factory Equipment Showcase</h2>
+          <p className="font-body text-diamond-black/50 text-sm mt-2">
             Detailed equipment specifications and capacity figures to be added.
           </p>
         </AnimatedSection>

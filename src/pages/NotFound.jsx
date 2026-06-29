@@ -9,7 +9,7 @@ export default function NotFound() {
         animate={{ rotate: [0, 15, -15, 0] }}
         transition={{ repeat: Infinity, duration: 3 }}
       >
-        <FaGem className="text-7xl text-diamond-gold drop-shadow-[0_0_20px_rgba(212,175,55,0.6)] mb-6" />
+        <FaGem className="text-7xl text-diamond-gold mb-6" />
       </motion.div>
       <h1 className="font-heading text-5xl text-diamond-silver mb-4">404</h1>
       <p className="font-body text-diamond-silver/60 mb-8 max-w-md">

@@ -22,7 +22,7 @@ export default function Gallery() {
                 <img
                   src={src}
                   alt={`Gallery item ${i + 1}`}
-                  className="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="w-full h-64 object-contain bg-white transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
             </AnimatedSection>

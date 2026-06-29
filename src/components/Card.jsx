@@ -8,7 +8,7 @@ export default function Card({ children, className = '', hover = true }) {
           ? {
               y: -8,
               boxShadow:
-                '0 16px 48px rgba(201,169,110,0.12), 0 0 0 1px rgba(201,169,110,0.2)',
+                '0 16px 48px rgba(0,0,0,0.08), 0 0 0 1px rgba(0,0,0,0.12)',
             }
           : undefined
       }

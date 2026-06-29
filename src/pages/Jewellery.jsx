@@ -61,7 +61,7 @@ export default function Jewellery() {
               className={`font-body text-xs uppercase tracking-[0.15em] px-6 py-2 rounded-full border transition-all duration-300 ${
                 active === cat
                   ? 'bg-diamond-gold text-diamond-black border-diamond-gold'
-                  : 'bg-transparent text-diamond-silver/70 border-diamond-silver/20 hover:border-diamond-gold hover:text-diamond-gold'
+                  : 'bg-transparent text-diamond-silver/70 border-diamond-silver/20 hover:border-black hover:text-black'
               }`}
             >
               {cat}
@@ -92,15 +92,15 @@ export default function Jewellery() {
                         alt={product.name}
                         className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-108"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-diamond-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                       <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                        <span className="font-body text-xs text-diamond-gold tracking-widest uppercase">{product.category}</span>
+                        <span className="font-body text-xs text-white tracking-widest uppercase">{product.category}</span>
                       </div>
                     </div>
                     <div className="p-5">
                       <h3 className="font-heading text-base text-diamond-silver mb-1">{product.name}</h3>
                       <p className="font-body text-xs text-diamond-silver/50 mb-1">{product.stone}</p>
-                      <p className="font-body text-xs text-diamond-gold tracking-wide">{product.metal}</p>
+                      <p className="font-body text-xs text-diamond-silver/70 tracking-wide">{product.metal}</p>
                     </div>
                   </Card>
                 </motion.div>
@@ -111,12 +111,12 @@ export default function Jewellery() {
       </section>
 
       {/* WHY LAB GROWN */}
-      <section className="py-24 px-6 bg-[#0d0d0d]">
+      <section className="dark-section py-24 px-6 bg-[#0d0d0d]">
         <AnimatedSection className="text-center mb-14">
-          <h2 className="font-heading text-3xl md:text-4xl text-diamond-silver">
+          <h2 className="font-heading text-3xl md:text-4xl text-white">
             Why Lab Grown Diamonds?
           </h2>
-          <p className="font-body text-diamond-silver/50 text-sm mt-3 max-w-xl mx-auto">
+          <p className="font-body text-white/50 text-sm mt-3 max-w-xl mx-auto">
             The same fire. The same brilliance. A better story.
           </p>
         </AnimatedSection>
@@ -124,9 +124,9 @@ export default function Jewellery() {
           {whyLabGrown.map((item, i) => (
             <AnimatedSection key={item.title} delay={i * 0.12}>
               <Card className="text-center h-full">
-                <item.icon className="text-4xl text-diamond-gold mx-auto mb-4" />
-                <h3 className="font-heading text-lg text-diamond-silver mb-3">{item.title}</h3>
-                <p className="font-body text-sm text-diamond-silver/60">{item.desc}</p>
+                <item.icon className="text-4xl text-white mx-auto mb-4" />
+                <h3 className="font-heading text-lg text-white mb-3">{item.title}</h3>
+                <p className="font-body text-sm text-white/60">{item.desc}</p>
               </Card>
             </AnimatedSection>
           ))}
@@ -136,8 +136,8 @@ export default function Jewellery() {
       {/* CRAFTSMANSHIP STRIP */}
       <AnimatedSection as="section" className="py-20 px-6">
         <div className="max-w-6xl mx-auto glass rounded-3xl p-10 md:p-16 text-center relative overflow-hidden">
-          <div className="absolute inset-0 shimmer-bg opacity-[0.03] rounded-3xl" />
-          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-64 h-px bg-gradient-to-r from-transparent via-diamond-gold to-transparent opacity-50" />
+          <div className="absolute inset-0 shimmer-bg opacity-[0.02] rounded-3xl" />
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-64 h-px bg-gradient-to-r from-transparent via-black to-transparent opacity-20" />
           <h2 className="font-heading text-2xl md:text-4xl text-diamond-silver mb-4 relative z-10">
             Each Piece, a <span className="text-gradient-gold">Masterpiece</span>
           </h2>
@@ -149,7 +149,7 @@ export default function Jewellery() {
           <div className="relative z-10">
             <Button to="/contact" variant="primary">Request a Consultation</Button>
           </div>
-          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-64 h-px bg-gradient-to-r from-transparent via-diamond-gold to-transparent opacity-50" />
+          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-64 h-px bg-gradient-to-r from-transparent via-black to-transparent opacity-20" />
         </div>
       </AnimatedSection>
     </div>

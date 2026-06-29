@@ -29,7 +29,7 @@ export default function CountUp({ end, duration = 2.2 }) {
   return (
     <motion.span
       ref={ref}
-      className="font-heading text-4xl md:text-5xl text-diamond-gold drop-shadow-[0_0_15px_rgba(0,212,255,0.5)]"
+      className="font-heading text-4xl md:text-5xl text-white"
     >
       {value.toLocaleString()}+
     </motion.span>

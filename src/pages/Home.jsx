@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import AnimatedSection from '../components/AnimatedSection';
 import Button from '../components/Button';
@@ -12,35 +11,17 @@ export default function Home() {
   return (
     <div>
       {/* HERO */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-diamond-black">
+      <section className="relative min-h-screen flex flex-col justify-end overflow-hidden bg-black">
         <img
           src={hero.bg}
           alt=""
-          className="absolute inset-0 w-full h-full object-cover opacity-60"
+          className="absolute inset-0 w-full h-full object-cover"
         />
-        <Sparkles />
-        <div className="relative z-10 max-w-4xl mx-auto text-center px-6">
-          <motion.div
-            initial={{ opacity: 0, scale: 0.7 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1 }}
-            className="flex justify-center mb-8 mt-16"
-          >
-            <img src={hero.diamond} alt="Cauer lab grown diamond" className="w-40 md:w-70 animate-float drop-shadow-[0_0_40px_rgba(201,169,110,0.35)]" />
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3, duration: 0.7 }}
-            className="flex justify-center mb-10"
-          >
-            <img src="/images/logo.png" alt="Cauer" className="w-64 md:w-96 drop-shadow-[0_0_30px_rgba(201,169,110,0.4)]" />
-          </motion.div>
-
+        {/* <Sparkles /> */}
+        <div className="relative z-10 max-w-4xl mx-auto text-center px-6 pb-12">
           <div className="flex flex-wrap justify-center gap-4">
             <Button to="/jewellery" variant="primary">Explore Jewellery</Button>
-            <Button to="/contact" variant="secondary">Contact Us</Button>
+            <Button to="/diamonds" variant="secondary-light">Explore Collection</Button>
           </div>
         </div>
       </section>
@@ -55,23 +36,23 @@ export default function Home() {
           with timeless craftsmanship to create pieces of exceptional brilliance, ethical origin,
           and enduring beauty.
         </p>
-        <Link to="/about" className="font-body text-diamond-gold underline hover:text-diamond-blue transition-colors">
+        <Link to="/about" className="font-body text-diamond-silver underline hover:text-diamond-blue transition-colors">
           Learn More &rarr;
         </Link>
       </AnimatedSection>
 
       {/* WHY CHOOSE US */}
-      <section className="py-24 px-6 bg-[#0d0d0d]">
+      <section className="dark-section py-24 px-6 bg-[#0d0d0d]">
         <AnimatedSection className="text-center mb-14">
-          <h2 className="font-heading text-3xl md:text-4xl text-diamond-silver">Why Choose Us</h2>
+          <h2 className="font-heading text-3xl md:text-4xl text-white">Why Choose Us</h2>
         </AnimatedSection>
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {whyChooseUs.map((item, i) => (
             <AnimatedSection key={item.title} delay={i * 0.1}>
               <Card className="h-full text-center">
-                <item.icon className="text-4xl text-diamond-gold mx-auto mb-4" />
-                <h3 className="font-heading text-lg text-diamond-silver mb-2">{item.title}</h3>
-                <p className="font-body text-sm text-diamond-silver/60">{item.desc}</p>
+                <item.icon className="text-4xl text-white mx-auto mb-4" />
+                <h3 className="font-heading text-lg text-white mb-2">{item.title}</h3>
+                <p className="font-body text-sm text-white/60">{item.desc}</p>
               </Card>
             </AnimatedSection>
           ))}
@@ -83,16 +64,16 @@ export default function Home() {
         <AnimatedSection className="text-center mb-14">
           <h2 className="font-heading text-3xl md:text-4xl text-diamond-silver">Our Diamonds</h2>
         </AnimatedSection>
-        <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div className="max-w-7xl mx-auto grid grid-cols-3 md:grid-cols-5 lg:grid-cols-9 gap-3">
           {diamonds.map((src, i) => (
             <AnimatedSection key={i} variant="scaleIn" delay={i * 0.05}>
-              <div className="relative overflow-hidden rounded-xl group shine-overlay">
+              <div className="relative aspect-square overflow-hidden rounded-xl group shine-overlay">
                 <img
                   src={src}
-                  alt={`Diamond ${i + 1}`}
-                  className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
+                  alt={`Diamond cut ${i + 1}`}
+                  className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-diamond-black/0 group-hover:bg-diamond-black/30 transition-colors duration-300" />
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
               </div>
             </AnimatedSection>
           ))}
@@ -103,26 +84,26 @@ export default function Home() {
       </section>
 
       {/* PROCESS TIMELINE */}
-      <section className="py-24 px-6 bg-[#0d0d0d]">
+      <section className="dark-section py-24 px-6 bg-[#0d0d0d]">
         <AnimatedSection className="text-center mb-16">
-          <h2 className="font-heading text-3xl md:text-4xl text-diamond-silver">Our Manufacturing Process</h2>
+          <h2 className="font-heading text-3xl md:text-4xl text-white">Our Manufacturing Process</h2>
         </AnimatedSection>
         <div className="max-w-6xl mx-auto relative">
-          <div className="hidden md:block absolute top-8 left-0 right-0 h-px bg-diamond-gold/30" />
+          <div className="hidden md:block absolute top-8 left-0 right-0 h-px bg-white/20" />
           <div className="grid grid-cols-1 md:grid-cols-5 gap-10">
             {processSteps.map((step, i) => (
               <AnimatedSection key={step.title} delay={i * 0.15} className="text-center relative">
                 <div className="w-16 h-16 mx-auto rounded-full glass flex items-center justify-center mb-4 relative z-10">
-                  <step.icon className="text-2xl text-diamond-gold" />
+                  <step.icon className="text-2xl text-white" />
                 </div>
-                <h3 className="font-heading text-sm text-diamond-silver mb-2">{step.title}</h3>
-                <p className="font-body text-xs text-diamond-silver/60">{step.desc}</p>
+                <h3 className="font-heading text-sm text-white mb-2">{step.title}</h3>
+                <p className="font-body text-xs text-white/60">{step.desc}</p>
               </AnimatedSection>
             ))}
           </div>
         </div>
         <div className="text-center mt-12">
-          <Button to="/process" variant="secondary">See Full Process</Button>
+          <Button to="/process" variant="secondary-light">See Full Process</Button>
         </div>
       </section>
 
@@ -143,12 +124,12 @@ export default function Home() {
       </section>
 
       {/* STATS */}
-      <section className="py-24 px-6 bg-[#0d0d0d]">
+      <section className="dark-section py-24 px-6 bg-[#0d0d0d]">
         <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-10 text-center">
           {stats.map((stat, i) => (
             <AnimatedSection key={stat.label} delay={i * 0.1}>
               <CountUp end={stat.value} />
-              <p className="font-body text-sm text-diamond-silver/60 mt-2">{stat.label}</p>
+              <p className="font-body text-sm text-white/60 mt-2">{stat.label}</p>
             </AnimatedSection>
           ))}
         </div>
@@ -173,8 +154,8 @@ export default function Home() {
       </section>
 
       {/* CTA BANNER */}
-      <AnimatedSection as="section" className="py-24 px-6 text-center bg-gradient-to-r from-[#111] via-[#1a1a1a] to-[#111]">
-        <h2 className="font-heading text-3xl md:text-4xl text-diamond-silver mb-6">
+      <AnimatedSection as="section" className="dark-section py-24 px-6 text-center bg-[#111111]">
+        <h2 className="font-heading text-3xl md:text-4xl text-white mb-6">
           Ready to Discover Your Perfect Piece?
         </h2>
         <Button to="/contact">Get in Touch</Button>
