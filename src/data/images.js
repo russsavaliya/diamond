@@ -4,7 +4,8 @@
 export const logo = '/images/logo.png';
 
 export const hero = {
-  bg: '/images/hero/hero-backgound.png',
+  bg: '/images/hero/hero-backgound.png',    //1980 * 1080
+  mobileBg: '/images/hero/hero-mobile.png',  //750 × 1334 px
   diamond: '/images/hero/hero-1.png',
 };
 
