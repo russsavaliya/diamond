@@ -15,9 +15,9 @@ export default function Home() {
         <img
           src={hero.bg}
           alt=""
-          className="absolute inset-0 w-full h-full object-cover opacity-60"
+          className="absolute inset-0 w-full h-full object-cover"
         />
-        <Sparkles />
+        {/* <Sparkles /> */}
         <div className="relative z-10 max-w-4xl mx-auto text-center px-6 pb-12">
           <div className="flex flex-wrap justify-center gap-4">
             <Button to="/jewellery" variant="primary">Explore Jewellery</Button>
