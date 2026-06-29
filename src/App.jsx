@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
+import { FaWhatsapp } from 'react-icons/fa';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Loader from './components/Loader';
@@ -12,6 +13,7 @@ import Contact from './pages/Contact';
 import Gallery from './pages/Gallery';
 import Jewellery from './pages/Jewellery';
 import NotFound from './pages/NotFound';
+import { company } from './data/siteData';
 
 function PageWrapper({ children }) {
   return (
@@ -58,12 +60,42 @@ function CustomCursor() {
   );
 }
 
+function WhatsAppButton() {
+  const phone = company.phone.replace(/\D/g, '');
+  const message = encodeURIComponent('Hello! I am interested in your lab-grown diamonds.');
+  const href = `https://wa.me/${phone}?text=${message}`;
+
+  return (
+    <motion.a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Chat with us on WhatsApp"
+      className="fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 rounded-full shadow-lg"
+      style={{ backgroundColor: '#25D366' }}
+      initial={{ scale: 0, opacity: 0 }}
+      animate={{ scale: 1, opacity: 1 }}
+      transition={{ delay: 2, type: 'spring', stiffness: 260, damping: 20 }}
+      whileHover={{ scale: 1.15 }}
+      whileTap={{ scale: 0.9 }}
+    >
+      <FaWhatsapp size={30} color="#fff" />
+    </motion.a>
+  );
+}
+
 function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const timer = setTimeout(() => setLoading(false), 1500);
     return () => clearTimeout(timer);
+  }, []);
+
+  useEffect(() => {
+    const block = (e) => { if (e.target.tagName === 'IMG') e.preventDefault(); };
+    document.addEventListener('contextmenu', block);
+    return () => document.removeEventListener('contextmenu', block);
   }, []);
 
   return (
@@ -75,6 +107,7 @@ function App() {
         <AnimatedRoutes />
       </main>
       <Footer />
+      <WhatsAppButton />
     </>
   );
 }

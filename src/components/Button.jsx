@@ -36,7 +36,7 @@ export default function Button({
 
   if (to) {
     return (
-      <motion.div {...motionProps} className="inline-block">
+      <motion.div {...motionProps} className="inline-block rounded-full">
         <Link to={to} className={classes}>
           {content}
         </Link>
@@ -46,7 +46,7 @@ export default function Button({
 
   if (href) {
     return (
-      <motion.div {...motionProps} className="inline-block">
+      <motion.div {...motionProps} className="inline-block rounded-full">
         <a href={href} target="_blank" rel="noreferrer" className={classes}>
           {content}
         </a>
