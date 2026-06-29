@@ -22,10 +22,18 @@ export const diamonds = [
 
 // TODO: replace with actual factory photographs
 export const factory = {
-  shot1: 'https://placehold.co/800x600/0f0f0f/e5e5e5?text=Factory+1',
-  shot2: 'https://placehold.co/800x600/0f0f0f/e5e5e5?text=Factory+2',
-  shot3: 'https://placehold.co/800x600/0f0f0f/e5e5e5?text=Factory+3',
-  machine: 'https://placehold.co/800x600/0f0f0f/c9a96e?text=CVD+Machine',
+  shot1: '/images/factory/f1.png',
+  shot2: '/images/factory/f2.png',
+  shot3: '/images/factory/f3.png',
+  machine: '/images/factory/f4.png',
+};
+
+export const process = {
+  step_1: '/images/process/p1.png',
+  step_2: '/images/process/p2.png',
+  step_3: '/images/process/p3.png',
+  step_4: '/images/process/p4.png',
+  step_5: '/images/process/p5.png',
 };
 
 // TODO: replace with actual team headshots
