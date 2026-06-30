@@ -58,16 +58,21 @@ export const gallery = [...diamonds, factory.shot1, factory.shot2, factory.shot3
 
 // TODO: replace with actual jewellery photography
 export const jewellery = [
-  'https://placehold.co/600x600/1a1a1a/c9a96e?text=Eternal+Solitaire',
-  'https://placehold.co/600x600/1a1a1a/c9a96e?text=Infinity+Ring',
-  'https://placehold.co/600x600/1a1a1a/c9a96e?text=Eternity+Band',
-  'https://placehold.co/600x600/1a1a1a/c9a96e?text=Cocktail+Ring',
-  'https://placehold.co/600x600/1a1a1a/c9a96e?text=Stellar+Pendant',
-  'https://placehold.co/600x600/1a1a1a/c9a96e?text=Tennis+Necklace',
-  'https://placehold.co/600x600/1a1a1a/c9a96e?text=Drop+Necklace',
-  'https://placehold.co/600x600/1a1a1a/c9a96e?text=Diamond+Studs',
-  'https://placehold.co/600x600/1a1a1a/c9a96e?text=Halo+Earrings',
-  'https://placehold.co/600x600/1a1a1a/c9a96e?text=Drop+Earrings',
-  'https://placehold.co/600x600/1a1a1a/c9a96e?text=Tennis+Bracelet',
-  'https://placehold.co/600x600/1a1a1a/c9a96e?text=Diamond+Bangle',
+  '/images/jewellery/ring1.jpg',
+  '/images/jewellery/ring2.jpg',
+  '/images/jewellery/ring3.jpg',
+  '/images/jewellery/ring4.jpg',
+  '/images/jewellery/pendant1.jpg',
+  '/images/jewellery/pendant2.jpg',
+  '/images/jewellery/pendant3.jpg',
+  '/images/jewellery/pendant4.jpg',
+  '/images/jewellery/eyring1.jpg',
+  '/images/jewellery/eyring2.jpg',
+  '/images/jewellery/eyring3.jpg',
+  '/images/jewellery/eyring4.jpg',
+  '/images/jewellery/bracelet1.jpg',
+  '/images/jewellery/bracelet2.jpg',
+  '/images/jewellery/bracelet3.jpg',
+  '/images/jewellery/bracelet4.jpg',
 ];
+  

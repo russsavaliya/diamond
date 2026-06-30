@@ -90,7 +90,7 @@ export default function About() {
       </section>
 
       {/* LEADERSHIP */}
-      <section className="py-24 px-6">
+      {/* <section className="py-24 px-6">
         <AnimatedSection className="text-center mb-14">
           <h2 className="font-heading text-3xl text-diamond-silver">Leadership Team</h2>
         </AnimatedSection>
@@ -105,7 +105,7 @@ export default function About() {
             </AnimatedSection>
           ))}
         </div>
-      </section>
+      </section> */}
 
       {/* CERTIFICATIONS */}
       <section className="dark-section py-24 px-6 bg-[#0d0d0d]">

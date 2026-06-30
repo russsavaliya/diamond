@@ -75,10 +75,11 @@ export default function Jewellery() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           <AnimatePresence mode="popLayout">
             {filtered.map((product, i) => {
-              const imgSrc = jewellery[jewelleryProducts.indexOf(product)] || jewellery[i % jewellery.length];
+              const globalIdx = jewelleryProducts.indexOf(product);
+              const imgSrc = jewellery[globalIdx] || jewellery[globalIdx % jewellery.length];
               return (
                 <motion.div
-                  key={product.name}
+                  key={`${product.category}-${product.name}-${i}`}
                   layout
                   initial={{ opacity: 0, scale: 0.92 }}
                   animate={{ opacity: 1, scale: 1 }}

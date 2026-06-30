@@ -171,14 +171,21 @@ export const jewelleryProducts = [
   { name: 'Infinity Engagement Ring', category: 'Rings', stone: 'Princess Cut', metal: '18K Rose Gold' },
   { name: 'Lumina Eternity Band', category: 'Rings', stone: 'Round Brilliant', metal: 'Platinum' },
   { name: 'Aurora Cocktail Ring', category: 'Rings', stone: 'Oval Cut', metal: '18K Yellow Gold' },
+
   { name: 'Stellar Pendant Necklace', category: 'Necklaces', stone: 'Round Brilliant', metal: '18K White Gold' },
   { name: 'Diamond Tennis Necklace', category: 'Necklaces', stone: 'Round Brilliant', metal: 'Platinum' },
   { name: 'Celestial Drop Necklace', category: 'Necklaces', stone: 'Pear Cut', metal: '18K Rose Gold' },
-  { name: 'Classic Diamond Studs', category: 'Earrings', stone: 'Round Brilliant', metal: '18K White Gold' },
+  { name: 'Classic Diamond Studs', category: 'Necklaces', stone: 'Round Brilliant', metal: '18K White Gold' },
+
   { name: 'Halo Hoop Earrings', category: 'Earrings', stone: 'Round Brilliant', metal: 'Platinum' },
   { name: 'Cascade Drop Earrings', category: 'Earrings', stone: 'Marquise Cut', metal: '18K Rose Gold' },
+  { name: 'Starburst Stud Earrings', category: 'Earrings', stone: 'Princess Cut', metal: '18K White Gold' },
+  { name: 'Classic Diamond Ear Drops', category: 'Earrings', stone: 'Round Brilliant', metal: '18K Yellow Gold' },
+
   { name: 'Diamond Tennis Bracelet', category: 'Bracelets', stone: 'Round Brilliant', metal: '18K White Gold' },
   { name: 'Bangle with Diamond Accents', category: 'Bracelets', stone: 'Round Brilliant', metal: '18K Yellow Gold' },
+  { name: 'Delicate Diamond Chain Bracelet', category: 'Bracelets', stone: 'Round Brilliant', metal: 'Platinum' },
+  { name: 'Pavé Diamond Cuff', category: 'Bracelets', stone: 'Round Brilliant', metal: '18K Rose Gold' },
 ];
 
 export const navLinks = [
