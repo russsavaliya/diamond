@@ -12,11 +12,10 @@ export default function Home() {
     <div>
       {/* HERO */}
       <section className="relative min-h-screen flex flex-col justify-end overflow-hidden bg-black">
-        <img
-          src={hero.bg}
-          alt=""
-          className="absolute inset-0 w-full h-full object-cover"
-        />
+        <picture className="absolute inset-0 w-full h-full">
+          <source media="(max-width: 767px)" srcSet={hero.mobileBg} />
+          <img src={hero.bg} alt="" className="w-full h-full object-cover" />
+        </picture>
         {/* <Sparkles /> */}
         <div className="relative z-10 max-w-4xl mx-auto text-center px-6 pb-12">
           <div className="flex flex-wrap justify-center gap-4">
