@@ -45,7 +45,7 @@ export const team = [
 ];
 
 // TODO: replace with actual about/company banner photo
-export const aboutBanner = 'https://placehold.co/1600x700/0f0f0f/1a1a1a?text=Our+Story';
+export const aboutBanner = '/images/about/about.png';
 
 // TODO: replace with actual certification badge scans
 export const certificates = [
